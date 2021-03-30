@@ -1,5 +1,5 @@
 ---
-title: Subscriptions
+title: Signup
 pricing:
   - title: Personal
     description: Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras.
