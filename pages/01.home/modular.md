@@ -75,4 +75,3 @@ content:
             - _contact
 ---
 
-admin
