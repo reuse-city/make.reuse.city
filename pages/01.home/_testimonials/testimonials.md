@@ -1,6 +1,7 @@
 ---
 title: SUBSCRIBE TO STAY IN THE LOOP
 hidemenu: true
+published: false
 testimonials:
   - avatar: face1.jpg
     quote: Good design at the front-end suggests that everything is in order at the back-end, whether or not that is the case.
