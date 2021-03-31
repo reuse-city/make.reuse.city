@@ -11,7 +11,6 @@ content:
             - _intro
             - _features
             - _video
-            - _pricing
             - _testimonials
             - _text
             - _news
