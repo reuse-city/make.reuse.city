@@ -1,6 +1,6 @@
 ---
 title: Research Questions
-menu: research-questions
+menu: Research Questions
 features:
   - title: Increase reuse
     icon: pen

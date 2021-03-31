@@ -1,6 +1,6 @@
 ---
-title: Sign-up
-menu: sign-up
+title: Pricing
+published: false
 pricing:
   - title: Personal
     description: Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras.
