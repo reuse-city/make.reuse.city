@@ -1,5 +1,6 @@
 ---
 title: News
+published: false
 news:
   - label: Featured
     image: photo1.jpeg
