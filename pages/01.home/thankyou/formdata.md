@@ -4,4 +4,4 @@ navbar_class: navbar-dark bg-inverse
 
 ---
 
-Your email was sent. Thank you !
+Thank you for your message. I will reply as soon as possible. You can check out my <a href="https://is.efeefe.me/opendott"><strong>research blog</strong></a> to find more about this and other activities I am organising currently.

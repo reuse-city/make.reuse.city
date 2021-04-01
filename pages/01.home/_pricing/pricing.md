@@ -43,4 +43,6 @@ pricing:
     additional_css: wp-6
 
 ---
-### Manage your subscriptions
+### Subscribe
+
+Insert your e-mail address below to receive updated about the make.reuse.city online co-design lab.

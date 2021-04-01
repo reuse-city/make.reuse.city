@@ -2,38 +2,44 @@
 title: make.reuse.city
 menu: Home
 form:
-    name: my-nice-form
+    name: my-contact-form
     action: /home
     fields:
-        -
-            name: name
-            id: name
-            label: Name
-            classes: 'form-control form-control-lg'
-            placeholder: 'Enter your name'
-            autocomplete: 'on'
-            type: text
-            validate:
-                required: true
         -
             name: email
             id: email
             classes: 'form-control form-control-lg'
             label: Email
-            placeholder: 'Enter your email address'
+            placeholder: 'Email address (required)'
             type: text
             validate:
                 rule: email
                 required: true
         -
+            subscribe:
+            type: checkbox
+            label: "I agree to receive email updates about this co-design lab (optional)."
+            validate:
+            required: false
+        -
+            name: name
+            id: name
+            label: Name
+            classes: 'form-control form-control-lg'
+            placeholder: 'Name (optional)'
+            autocomplete: 'on'
+            type: text
+            validate:
+                required: false
+        -
             name: message
             label: Message
             classes: 'form-control form-control-lg'
             size: long
-            placeholder: 'Enter your message'
+            placeholder: 'Message (optional)'
             type: textarea
             validate:
-                required: true
+                required: false
     buttons:
         -
             type: submit
@@ -55,7 +61,7 @@ form:
                 extension: txt
                 body: '{% include ''forms/data.txt.twig'' %}'
         -
-            message: 'Thank you for your feedback!'
+            message: 'Thank you for your message.'
         -
             display: thankyou
 onpage_menu: true
@@ -65,10 +71,12 @@ content:
         by: default
         dir: asc
         custom:
-            - _intro
-            - _features
-            - _video
-            - _testimonials
-            - _text
-            - _news
+        - _intro
+        - _features
+        - _video
+        - _pricing
+        - _testimonials
+        - _text
+        - _news
+        - _contact
 ---
