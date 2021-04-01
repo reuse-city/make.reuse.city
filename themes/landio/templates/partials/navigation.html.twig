@@ -37,6 +37,7 @@
                 </li>
                 {% endif %}
                 {% endfor %}
+{#
 
                 {% if config.plugins.simplesearch.enabled %}
                 <li class="nav-item nav-item-toggable hidden-sm-up">
@@ -47,7 +48,7 @@
                 <li class="navbar-divider hidden-sm-down"></li>
                 <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
                     <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="icon-search"></span>
+                        <spansearch class="icon-search"></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
                         <form class="navbar-form">
@@ -57,6 +58,7 @@
                     </div>
                 </li>
                 {% endif %}
+#}
                 {% if config.plugins.login.enabled %}
                 {% if grav.user.username %}
                 <li class="nav-item dropdown hidden-sm-down textselect-off">
@@ -97,11 +99,13 @@
                     </div>
                 </li>
                 {% else %}
-                <li class="nav-item nav-item-toggable ">
+{# commenting out
+               <li class="nav-item nav-item-toggable ">
                     <a class="nav-link" href="login">
                         {{ 'PLUGIN_LOGIN.BTN_LOGIN'|t }}
                     </a>
                 </li>
+#}
                 {% endif %}
                 {% endif %}
             </ul>

@@ -5,7 +5,7 @@
     {% for item in site.header.buttons %}
     <a class="btn btn-secondary-outline m-b-md" href="{{ item.url }}" role="button"><span class="icon-{{ item.icon }}"></span>{{ item.text }}</a>
     {% endfor %}
-
+{#
     <script type="text/javascript">
         {% if site.socialcount.facebook_url %}
         // Facebook Shares Count
@@ -26,7 +26,6 @@
         });
     {% endif %}
     </script>
-
     <ul class="list-inline social-share">
         {% if site.socialcount.twitter_url %}
             <li><a class="nav-link" href="{{ site.socialcount.twitter_url }}"><span class="icon-twitter"></span> <span class="social-text" id="twitter-count">0</span></a></li>
@@ -38,7 +37,7 @@
             <li><a class="nav-link" href="{{ site.socialcount.linkedin_url }}"><span class="icon-linkedin"></span> <span class="social-text" id="linkedin-count">0</span></a></li>
         {% endif %}
     </ul>
+#}
   </div>
-
 
 </header>
