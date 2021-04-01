@@ -1,5 +1,5 @@
 ---
 hidemenu: true
-published: false
+published: true
 ---
 ### Contact us {.text-center .m-b-lg}
