@@ -1,7 +1,6 @@
 ---
-hidemenu: true
 title: Text
-menu: description
+menu: Sign up
 text:
   - content: Clicking above will take you to an online form that explains in detail what you are agreeing to.
     css_suffix: wp-7
@@ -26,20 +25,17 @@ In the current phase I am inviting people to co-design and prototype speculative
   </p>
 </div>
 
-<a id="signup"> Those who sign up will be invited to a series of online activities and meetings troughout the duration of the lab. Documentation about it will be primarily maintained in <a href="https://github.com/opendott-smartcities/II/"><strong>this git repository</strong></a>.
+<a id="sign_up"> Those who sign up will be invited to a series of online activities and meetings troughout the duration of the lab. Documentation about it will be primarily maintained in <a href="https://github.com/opendott-smartcities/II/"><strong>this git repository</strong></a>.
 
 #### Sign up
 
-Participants interested in joining in are required to sign up. This step is mandatory to participate on the online meetings and other activities, as this is an academic research that needs to adhere to ethics oversight from Northumbria University.
+Participants interested in joining in are required to sign up beforehand. This step is mandatory to participate on the online meetings and other activities, as this is an academic research that needs to adhere to ethics oversight from Northumbria University.
 
 People from diverse fields of knowledge, ages and locations are welcome. The workshop requires however that participants have a sufficient understanding of English in order to adhere to Northumbria University's ethics regulations.
 
 <div class="col-md-5" align="center">
-
     <a class="btn btn-success" href="https://forms.gle/rat12rsPstvg89aX9" role="button">Sign up via form</a>
-
 </div>
-
 <div class="col-md-5 col-md-offset-2 separator-x" align="center">
     <a class="btn btn-warning" href="https://is.efeefe.me/reuse-city/#PDF" role="button">Sign up via PDF</a>
-      </div>
+</div>
