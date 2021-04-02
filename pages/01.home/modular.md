@@ -1,5 +1,5 @@
 ---
-title: make.reuse.city
+title: reuse.city
 menu: Home
 form:
     name: my-contact-form
