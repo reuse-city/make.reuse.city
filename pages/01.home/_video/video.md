@@ -1,14 +1,12 @@
 ---
 hidemenu: true
 title: Videos
-published: false
+published: true
 videos:
   - poster: video-poster.jpg
     sources:
-      - url: http://vjs.zencdn.net/v/oceans.mp4
+      - url: https://ia801407.us.archive.org/30/items/reuse-welcome/reuse-welcome.mp4
         type: video/mp4
-      - url: http://vjs.zencdn.net/v/oceans.webm
-        type: video/webm
 
 ---
 

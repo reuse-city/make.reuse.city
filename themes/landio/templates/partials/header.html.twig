@@ -5,6 +5,9 @@
     {% for item in site.header.buttons %}
     <a class="btn btn-secondary-outline m-b-md" href="{{ item.url }}" role="button"><span class="icon-{{ item.icon }}"></span>{{ item.text }}</a>
     {% endfor %}
+    <ul class="list-inline social-share">
+            <li><a class="nav-link" href="https://twitter.com/reuse_city"><span class="icon-twitter"></span></a></li>
+    </ul>
 {#
     <script type="text/javascript">
         {% if site.socialcount.facebook_url %}
