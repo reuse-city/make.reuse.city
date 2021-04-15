@@ -25,7 +25,7 @@ In the current phase I am inviting people to co-design and prototype speculative
   </p>
 </div>
 
-<a id="sign_up"> Those who sign up will be invited to a series of online activities and meetings troughout the duration of the lab. Participants are welcome at any point. Documentation about it will be primarily maintained in <a href="https://github.com/reuse-city/lab/"><strong>this git repository</strong></a>. Regular updates will be posted to [twitter](twitter.com/reuse_city) and shared with participants via e-mail.
+<a id="sign_up"> Those who sign up will be invited to a series of online activities and meetings troughout the duration of the lab. Participants are welcome at any point.
 
 #### Sign up
 
@@ -39,3 +39,7 @@ People from diverse fields of knowledge, ages and locations are welcome at any p
 <div class="col-md-5 col-md-offset-2 separator-x" align="center">
     <a class="btn btn-warning" href="https://is.efeefe.me/reuse-city/#PDF" role="button">Sign up via PDF</a>
 </div>
+
+#### Stay up to date
+
+Documentation about the lab will be primarily maintained in <a href="https://github.com/reuse-city/lab/"><strong>this git repository</strong></a> and <a href="https://www.youtube.com/playlist?list=PLSHdLCc8rAqvn9bf4-96V3M8k3jdctzz9"><strong>this playlist on youtube</strong></a>. Regular updates will be posted to <a href="twitter.com/reuse_city"><strong>twitter</strong></a> and shared with participants via an exclusive e-mail discussion list.
