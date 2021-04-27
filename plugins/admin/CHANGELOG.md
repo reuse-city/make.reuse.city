@@ -1,3 +1,69 @@
+# v1.10.13
+## 04/23/2021
+
+1. [](#new)
+    * Added refresh action button for Folder to ease the regeneration of the slug based on the title. Available also as API entry `Grav.default.Forms.Fields.FolderField.Regenerate()` [#1738](https://github.com/getgrav/grav-plugin-admin/issues/1738)
+1. [](#improved)
+    * Removed sourcemaps references from fork-awesome.min.css [#2122](https://github.com/getgrav/grav-plugin-admin/issues/2122)
+    * Support native spell checkers in CodeMirror editor [#1266](https://github.com/getgrav/grav-plugin-admin/issues/1266)
+    * Added new 'Content Highlight' color to presets
+    * Copying Pages now prompts a dedicated modal that allows for picking title, folder name, parent location, page template and visibility [#1738](https://github.com/getgrav/grav-plugin-admin/issues/1738)
+    * Updated with latest language translations from Crowdin.com
+1. [](#bugfix)
+    * Moved preset CSS compile to earlier in the process to ensure compilation happens in time.
+    * Prevent Save actions from Flex Objects to trigger the unsaved unload notice [#2125](https://github.com/getgrav/grav-plugin-admin/issues/2125)
+    * Fixed audit vulnerabilities in module dependencies and house cleanup [#2096](https://github.com/getgrav/grav-plugin-admin/issues/2096)
+    * Fixed issue preventing Drag & Drop of media files while in Expert Mode [#1927](https://github.com/getgrav/grav-plugin-admin/issues/1927)
+    * Fixed broken link colors in `preset.css` which was causing issues with tabs and dropdowns
+    * Fixed permissions for page related tasks and actions
+    * Fixed permission check for configuration save [#2130](https://github.com/getgrav/grav-plugin-admin/issues/2130)
+    * Fixed missing/wrong page categories and tags when multi-language support is enabled [#2107](https://github.com/getgrav/grav-plugin-admin/issues/2107)
+
+# v1.10.12
+## 04/15/2021
+
+1. [](#bugfix)
+    * Regression: Fixed broken plugin/theme installer in admin
+    * Fixed error reporting for AJAX tasks if user has no permissions
+    * Fixed missing slash in password reset URL [#2119](https://github.com/getgrav/grav-plugin-admin/issues/2119)
+
+# v1.10.11
+## 04/13/2021
+
+1. [](#bugfix)
+    * **IMPORTANT** Fixed security vulnerability that allows installation of plugins with minimal admin privileges [GHSA-wg37-cf5x-55hq](https://github.com/getgrav/grav-plugin-admin/security/advisories/GHSA-wg37-cf5x-55hq)
+    * Fixed `You have been logged out` message when entering to 2FA authentication due to `/admin/task:getNotifications` AJAX call
+    * Fixed broken 2FA login when site is not configured to use Flex Users [#2109](https://github.com/getgrav/grav-plugin-admin/issues/2109)
+    * Fixed error message when user clicks logout link after the session has been expired
+
+# v1.10.10
+## 04/07/2021
+
+1. [](#bugfix)
+    * Fixed missing `admin-preset.css` in multisite environments
+    * Regression: Fixed broken 2FA form [#2109](https://github.com/getgrav/grav-plugin-admin/issues/2109)
+
+# v1.10.9
+## 04/06/2021
+
+1. [](#new)
+    * Requires **Grav 1.7.10**
+1. [](#improved)
+    * Better isolate admin to prevent session related vulnerabilities
+    * Removed support for custom login redirects for improved security
+    * Shorten forgot password link lifetime from 7 days to 1 hour
+    * Updated with latest language translations from Crowdin.com
+1. [](#bugfix)
+    * Fixed issue where Adding a new page and canceling from within Editing would alter the Parent location of the edited page [#2067](https://github.com/getgrav/grav-plugin-admin/issues/2067)
+    * Fixed and enhanced Range field to be Lists compatible [#2062](https://github.com/getgrav/grav-plugin-admin/issues/2062)
+    * Fixed ERR_TOO_MANY_REDIRECTS with HTTPS = 'On' [#2100](https://github.com/getgrav/grav-plugin-admin/issues/2100)
+    * Prevent expert editing mode from anyone else than super users [#2094](https://github.com/getgrav/grav-plugin-admin/issues/2094)
+    * Fixed login related pages being accessible from admin when user has logged in
+    * Fixed admin user creation and password reset allowing unsafe passwords
+    * Fixed missing validation when registering the first admin user
+    * Fixed reset password email not to have session specific token in it
+    * Fixed admin controller running before setting `$grav['page']`
+
 # v1.10.8
 ## 03/19/2021
 
