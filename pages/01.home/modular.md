@@ -16,10 +16,10 @@ form:
                 rule: email
                 required: true
         -
-            subscribe:
+            subscribe: null
             type: checkbox
-            label: "I agree to receive email updates about this co-design lab (optional)."
-            validate:
+            label: 'I agree to receive email updates about this co-design lab (optional).'
+            validate: null
             required: false
         -
             name: name
@@ -45,6 +45,10 @@ form:
             type: submit
             value: Submit
             class: 'btn btn-primary btn-block'
+        -
+            g-recaptcha-response: null
+            type: captcha
+            label: Captcha
     process:
         -
             email:
@@ -71,12 +75,13 @@ content:
         by: default
         dir: asc
         custom:
-        - _intro
-        - _features
-        - _video
-        - _pricing
-        - _testimonials
-        - _text
-        - _news
-        - _contact
+            - _intro
+            - _features
+            - _video
+            - _pricing
+            - _testimonials
+            - _text
+            - _news
+            - _contact
 ---
+
