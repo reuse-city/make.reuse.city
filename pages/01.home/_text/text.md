@@ -4,10 +4,10 @@ menu: Open Research
 text:
   - content:
     css_suffix: wp-7
-  - content: 
+  - content:
     css_suffix: wp-8
 ---
-### Open research {.text-center}
+### Open Research {.text-center}
 
 I am investigating how digital technologies can significantly reduce waste in urban contexts, by promoting the reuse of second-hand goods and materials. My specific focus is on practices of repair, upcycling and re-circulation, seeking economic as well as social and environmental outcomes locally. This is all part of my PhD research in an EU-funded doctoral programme called **[OpenDoTT](https://opendott.org)**. You can find more information about it in my **[research blog](https://is.efeefe.me/opendott)**.
 
