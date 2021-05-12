@@ -1,6 +1,6 @@
 ---
 menu: Subscribe
-published: true
+published: false
 ---
 ### Subscribe {.text-center .m-b-lg}
 

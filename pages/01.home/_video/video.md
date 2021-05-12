@@ -1,7 +1,7 @@
 ---
 hidemenu: true
 title: Videos
-published: true
+published: false
 videos:
   - poster: video-poster.jpg
     sources:
