@@ -1,6 +1,11 @@
 ---
 title: Text
 menu: Open Research
+text:
+  - content:
+    css_suffix: wp-7
+  - content: 
+    css_suffix: wp-8
 ---
 ### Open research {.text-center}
 
