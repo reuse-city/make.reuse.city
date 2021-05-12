@@ -1,11 +1,6 @@
 ---
 title: Text
-menu: Sign up
-text:
-  - content: Clicking above will take you to an online form that explains in detail what you are agreeing to.
-    css_suffix: wp-7
-  - content: You can opt to sign up by downloading the PDF versions and sending me via email.
-    css_suffix: wp-8
+menu: Open Research
 ---
 ### Open research {.text-center}
 
