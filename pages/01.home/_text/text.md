@@ -1,5 +1,5 @@
 ---
-title: Text
+title: Open Research
 text:
     -
         content: null
