@@ -1,7 +1,7 @@
 ---
 title: 'Waste prevention in generous cities'
 menu: About
-description: '<a id="about"></a><strong>TL;DR:</strong> my research is creating ways to promote the reuse of materials in cities and regions. In April 2021 I have organised the <em>make.reuse.city</em> online co-design lab, which had the participation of more than 20 people from 10 different countries. Updates about reuse.city are shared on <a href="https://twitter.com/reuse_city"><strong>twitter</strong></a>. Live documentation can be found on <a href="https://github.com/reuse-city/lab/"><strong>GitHub</strong></a>. Additionally, refer to my <a href="https://is.efeefe.me/reuse-city"><strong>research website</strong></a> to learn more about make.reuse.city and the wider research context it relates to.'
+description: '<a id="about"></a><strong>TL;DR:</strong> I am Felipe Schmidt Fonseca, a PhD researcher at the <a href="https://opendott.org"><strong>OpenDoTT</a> project (Northumbria University / Mozilla Foundation) investigating waste prevention through collective practices of reuse in cities and regions. Read more about my research below, or refer to my <a href="https://is.efeefe.me/opendott"><strong>research blog</strong></a>.'
 ---
 
 ![studio](intro.jpg){.img-responsive .wp .wp-3 .introimg}
