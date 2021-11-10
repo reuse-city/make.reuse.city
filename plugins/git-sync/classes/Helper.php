@@ -5,12 +5,16 @@ namespace Grav\Plugin\GitSync;
 use Defuse\Crypto\Crypto;
 use Grav\Common\Config\Config;
 use Grav\Common\Grav;
+use Grav\Common\Utils;
 use SebastianBergmann\Git\RuntimeException;
 
 class Helper
 {
     /** @var string */
     private static $hash = '594ef69d-6c29-45f7-893a-f1b4342687d3';
+
+    /** @var string */
+    const GIT_REGEX = '/(?:git|ssh|https?|git@[-\w.]+):(\/\/)?(.*?)(\.git)(\/?|\#[-\d\w._]+?)$/';
 
     /**
      * Checks if the user/ folder is already initialized
@@ -68,6 +72,10 @@ class Helper
     {
         $user = $user ? urlencode($user) . ':' : '';
         $password = urlencode($password);
+
+        if (Utils::startsWith($repository, 'ssh://')) {
+            return $repository;
+        }
 
         return str_replace('://', "://${user}${password}@", $repository);
     }

@@ -4,6 +4,7 @@ namespace Grav\Plugin\GitSync;
 use Grav\Common\Grav;
 use Grav\Common\Plugin;
 use Grav\Common\Utils;
+use http\Exception\RuntimeException;
 use RocketTheme\Toolbox\File\File;
 use SebastianBergmann\Git\Git;
 
@@ -115,6 +116,10 @@ class GitSync extends Git
      */
     public function testRepository($url, $branch)
     {
+        if (!preg_match(Helper::GIT_REGEX, $url)) {
+            throw new \RuntimeException("Git Repository value does not match the supported format.");
+        }
+
         $branch = $branch ? '"' . $branch . '"' : '';
         return $this->execute("ls-remote \"{$url}\" {$branch}");
     }
@@ -145,9 +150,16 @@ class GitSync extends Git
     {
         $name = $this->getConfig('git', $name)['name'];
         $email = $this->getConfig('git', $email)['email'];
+        $privateKey = $this->getGitConfig('private_key', null);
 
         $this->execute("config user.name \"{$name}\"");
         $this->execute("config user.email \"{$email}\"");
+
+        if ($privateKey) {
+            $this->execute('config core.sshCommand "ssh -i ' . $privateKey . ' -F /dev/null"');
+        } else {
+            $this->execute('config --unset core.sshCommand');
+        }
 
         return true;
     }
@@ -213,6 +225,9 @@ class GitSync extends Git
                 $ignore[] = '!/' . $folder;
             }
         }
+
+        $ignoreEntries = explode("\n", $this->getGitConfig('ignore', ''));
+        $ignore = array_merge($ignore, $ignoreEntries);
 
         $file = File::instance(rtrim($this->repositoryPath, '/') . '/.gitignore');
         $file->save(implode("\r\n", $ignore));
@@ -471,7 +486,7 @@ class GitSync extends Git
                 exec($command, $output, $returnValue);
             }
 
-            if ($returnValue !== 0 && !$quiet) {
+            if ($returnValue !== 0 && $returnValue !== 5 && !$quiet) {
                 throw new \RuntimeException(implode("\r\n", $output));
             }
 
